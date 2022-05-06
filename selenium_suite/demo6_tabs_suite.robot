@@ -15,3 +15,5 @@ TC1
      Click Element    id=input_go
      Element Text Should Be    xpath=(//div[contains(@class,'alert alert-danger')])[3]     Error 1045: Access denied for user. Additional error information may be available, but is being hidden by the $cfg['Servers'][$i]['hide_connection_errors'] configuration directive.
      Element Should Contain    xpath=(//div[contains(@class,'alert alert-danger')])[3]     Access denied for user.
+     Close Window
+     Close Browser
