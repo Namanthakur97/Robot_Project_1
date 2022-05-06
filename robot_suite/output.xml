@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220504 21:26:24.535" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo2 Suite" source="C:\Users\Naman Thakur\PycharmProjects\robot_project\robot_suite\demo2_suite.robot">
+<test id="s1-t1" name="TC1" line="6">
+<kw name="Create File" library="OperatingSystem">
+<arg>path=E:\\Eclipse\\naman.txt</arg>
+<doc>Creates a file with the given content and encoding.</doc>
+<msg timestamp="20220504 21:26:24.932" level="INFO" html="true">Created file '&lt;a href="file://E:\Eclipse\naman.txt"&gt;E:\Eclipse\naman.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220504 21:26:24.578" endtime="20220504 21:26:24.932"/>
+</kw>
+<status status="PASS" starttime="20220504 21:26:24.576" endtime="20220504 21:26:24.933"/>
+</test>
+<test id="s1-t2" name="TC2" line="9">
+<kw name="Remove File" library="OperatingSystem">
+<arg>path=E:\\Eclipse\\naman.txt</arg>
+<doc>Removes a file with the given path.</doc>
+<msg timestamp="20220504 21:26:24.937" level="INFO" html="true">Removed file '&lt;a href="file://E:\Eclipse\naman.txt"&gt;E:\Eclipse\naman.txt&lt;/a&gt;'.</msg>
+<status status="PASS" starttime="20220504 21:26:24.936" endtime="20220504 21:26:24.937"/>
+</kw>
+<status status="PASS" starttime="20220504 21:26:24.935" endtime="20220504 21:26:24.938"/>
+</test>
+<test id="s1-t3" name="TC3" line="12">
+<kw name="Create Directory" library="OperatingSystem">
+<arg>path=E:\\Eclipse\\Chandigrah</arg>
+<doc>Creates the specified directory.</doc>
+<msg timestamp="20220504 21:26:24.941" level="INFO" html="true">Directory '&lt;a href="file://E:\Eclipse\Chandigrah"&gt;E:\Eclipse\Chandigrah&lt;/a&gt;' already exists.</msg>
+<status status="PASS" starttime="20220504 21:26:24.940" endtime="20220504 21:26:24.941"/>
+</kw>
+<status status="PASS" starttime="20220504 21:26:24.940" endtime="20220504 21:26:24.941"/>
+</test>
+<test id="s1-t4" name="TC4" line="15">
+<kw name="Remove Directory" library="OperatingSystem">
+<arg>path=E:\\Eclipse\\Chodu</arg>
+<doc>Removes the directory pointed to by the given ``path``.</doc>
+<msg timestamp="20220504 21:26:24.944" level="INFO" html="true">Directory '&lt;a href="file://E:\Eclipse\Chodu"&gt;E:\Eclipse\Chodu&lt;/a&gt;' does not exist.</msg>
+<status status="PASS" starttime="20220504 21:26:24.944" endtime="20220504 21:26:24.944"/>
+</kw>
+<status status="PASS" starttime="20220504 21:26:24.943" endtime="20220504 21:26:24.945"/>
+</test>
+<status status="PASS" starttime="20220504 21:26:24.537" endtime="20220504 21:26:24.947"/>
+</suite>
+<statistics>
+<total>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
+</total>
+<tag>
+</tag>
+<suite>
+<stat pass="4" fail="0" skip="0" id="s1" name="Demo2 Suite">Demo2 Suite</stat>
+</suite>
+</statistics>
+<errors>
+</errors>
+</robot>
