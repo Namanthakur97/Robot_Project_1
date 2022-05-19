@@ -1,134 +1,54 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220507 09:47:44.573" rpa="false" schemaversion="3">
-<suite id="s1" name="Demo9 Task Suite" source="C:\Users\Naman Thakur\PycharmProjects\robot_project\selenium_suite\demo9_task_suite.robot">
-<test id="s1-t1" name="TC1" line="7">
-<kw name="Append To Environment Variable" library="OperatingSystem">
-<arg>Path</arg>
-<arg>C:\\Users\\Naman Thakur\\PycharmProjects\\robot_project\\driver</arg>
-<doc>Appends given ``values`` to environment variable ``name``.</doc>
-<msg timestamp="20220507 09:47:44.819" level="INFO">Environment variable 'Path' set to value 'C:\Program Files\Python310\Scripts\;C:\Program Files\Python310\;C:\Program Files\Common Files\Oracle\Java\javapath;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\Program Files (x86)\NVIDIA Corporation\PhysX\Common;C:\Program Files\Intel\WiFi\bin\;C:\Program Files\Common Files\Intel\WirelessCommon\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files\Git\cmd;C:\Users\Naman Thakur\AppData\Local\Microsoft\WindowsApps1;C:\Program Files\JetBrains\PyCharm Community Edition 2021.2.3\bin;;C:\Program Files\JetBrains\PyCharm 2021.2.3\bin;;C:\Users\Naman Thakur\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Naman Thakur\AppData\Local\GitHubDesktop\bin;;C:\Users\Naman Thakur\PycharmProjects\robot_project\driver'.</msg>
-<status status="PASS" starttime="20220507 09:47:44.819" endtime="20220507 09:47:44.819"/>
-</kw>
+<robot generator="Robot 5.0 (Python 3.10.4 on win32)" generated="20220510 12:46:37.686" rpa="false" schemaversion="3">
+<suite id="s1" name="Demo11" source="C:\Users\Naman Thakur\PycharmProjects\robot_project\selenium_suite\demo11.robot">
+<test id="s1-t1" name="TC1" line="5">
 <kw name="Open Browser" library="SeleniumLibrary">
-<arg>url=http://demo.openemr.io/b/openemr</arg>
 <arg>browser=chrome</arg>
+<arg>executable_path=C:\\Users\\Naman Thakur\\PycharmProjects\\robot_project\\driver</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<msg timestamp="20220507 09:47:44.820" level="INFO">Opening browser 'chrome' to base url 'http://demo.openemr.io/b/openemr'.</msg>
-<status status="PASS" starttime="20220507 09:47:44.820" endtime="20220507 09:47:51.041"/>
+<msg timestamp="20220510 12:46:37.957" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg timestamp="20220510 12:46:37.991" level="INFO">Cannot capture screenshot because no browser is open.</msg>
+<msg timestamp="20220510 12:46:37.992" level="FAIL">WebDriverException: Message: 'driver' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</msg>
+<status status="FAIL" starttime="20220510 12:46:37.956" endtime="20220510 12:46:37.995"/>
 </kw>
 <kw name="Maximize Browser Window" library="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" starttime="20220507 09:47:51.042" endtime="20220507 09:47:51.159"/>
+<status status="NOT RUN" starttime="20220510 12:46:37.997" endtime="20220510 12:46:37.997"/>
 </kw>
 <kw name="Set Selenium Implicit Wait" library="SeleniumLibrary">
 <arg>30s</arg>
 <doc>Sets the implicit wait value used by Selenium.</doc>
-<status status="PASS" starttime="20220507 09:47:51.159" endtime="20220507 09:47:51.161"/>
+<status status="NOT RUN" starttime="20220510 12:46:37.997" endtime="20220510 12:46:37.997"/>
 </kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=authUser</arg>
-<arg>admin</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220507 09:47:51.161" level="INFO">Typing text 'admin' into text field 'id=authUser'.</msg>
-<status status="PASS" starttime="20220507 09:47:51.161" endtime="20220507 09:47:51.244"/>
+<kw name="Go To" library="SeleniumLibrary">
+<arg>url=https://myntra.com</arg>
+<doc>Navigates the current browser window to the provided ``url``.</doc>
+<status status="NOT RUN" starttime="20220510 12:46:37.998" endtime="20220510 12:46:37.998"/>
 </kw>
-<kw name="Input Password" library="SeleniumLibrary">
-<arg>id=clearPass</arg>
-<arg>pass</arg>
-<doc>Types the given password into the text field identified by ``locator``.</doc>
-<msg timestamp="20220507 09:47:51.245" level="INFO">Typing password into text field 'id=clearPass'.</msg>
-<msg timestamp="20220507 09:47:51.286" level="INFO">Temporally setting log level to: NONE</msg>
-<msg timestamp="20220507 09:47:51.330" level="INFO">Log level changed from NONE to INFO.</msg>
-<status status="PASS" starttime="20220507 09:47:51.245" endtime="20220507 09:47:51.330"/>
-</kw>
-<kw name="Select From List By Value" library="SeleniumLibrary">
-<arg>name=languageChoice</arg>
-<arg>18</arg>
-<doc>Selects options from selection list ``locator`` by ``values``.</doc>
-<msg timestamp="20220507 09:47:51.331" level="INFO">Selecting options from selection list 'name=languageChoice' by value 18.</msg>
-<status status="PASS" starttime="20220507 09:47:51.331" endtime="20220507 09:47:51.404"/>
+<kw name="Mouse Over" library="SeleniumLibrary">
+<arg>xpath=//*[text()='Profile']</arg>
+<doc>Simulates hovering the mouse over the element ``locator``.</doc>
+<status status="NOT RUN" starttime="20220510 12:46:37.999" endtime="20220510 12:46:37.999"/>
 </kw>
 <kw name="Click Element" library="SeleniumLibrary">
-<arg>id=login-button</arg>
+<arg>xpath=//a[text()='login / Signup']</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220507 09:47:51.405" level="INFO">Clicking element 'id=login-button'.</msg>
-<status status="PASS" starttime="20220507 09:47:51.404" endtime="20220507 09:47:56.621"/>
+<status status="NOT RUN" starttime="20220510 12:46:37.999" endtime="20220510 12:46:37.999"/>
 </kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>xpath=//div[text()='Messages']</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220507 09:47:56.623" level="INFO">Clicking element 'xpath=//div[text()='Messages']'.</msg>
-<status status="PASS" starttime="20220507 09:47:56.622" endtime="20220507 09:47:56.715"/>
-</kw>
-<kw name="Select Frame" library="SeleniumLibrary">
-<arg>xpath=//iframe[@name='msg']</arg>
-<doc>Sets frame identified by ``locator`` as the current frame.</doc>
-<msg timestamp="20220507 09:47:56.716" level="INFO">Selecting frame 'xpath=//iframe[@name='msg']'.</msg>
-<status status="PASS" starttime="20220507 09:47:56.716" endtime="20220507 09:47:57.776"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>partial link=Add New</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220507 09:47:57.777" level="INFO">Clicking element 'partial link=Add New'.</msg>
-<status status="PASS" starttime="20220507 09:47:57.776" endtime="20220507 09:47:59.270"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>id=form_note_type</arg>
-<arg>Pharmacy</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220507 09:47:59.271" level="INFO">Selecting options from selection list 'id=form_note_type' by label Pharmacy.</msg>
-<status status="PASS" starttime="20220507 09:47:59.271" endtime="20220507 09:47:59.335"/>
-</kw>
-<kw name="Select From List By Label" library="SeleniumLibrary">
-<arg>id=form_message_status</arg>
-<arg>New</arg>
-<doc>Selects options from selection list ``locator`` by ``labels``.</doc>
-<msg timestamp="20220507 09:47:59.336" level="INFO">Selecting options from selection list 'id=form_message_status' by label New.</msg>
-<status status="PASS" starttime="20220507 09:47:59.336" endtime="20220507 09:47:59.379"/>
-</kw>
-<kw name="Select From List By Index" library="SeleniumLibrary">
-<arg>id=users</arg>
-<arg>1</arg>
-<doc>Selects options from selection list ``locator`` by ``indexes``.</doc>
-<msg timestamp="20220507 09:47:59.380" level="INFO">Selecting options from selection list 'id=users' by index 1.</msg>
-<status status="PASS" starttime="20220507 09:47:59.380" endtime="20220507 09:47:59.475"/>
-</kw>
-<kw name="Input Text" library="SeleniumLibrary">
-<arg>id=note</arg>
-<arg>Hello Naman</arg>
-<doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<msg timestamp="20220507 09:47:59.476" level="INFO">Typing text 'Hello Naman' into text field 'id=note'.</msg>
-<status status="PASS" starttime="20220507 09:47:59.476" endtime="20220507 09:47:59.567"/>
-</kw>
-<kw name="Click Element" library="SeleniumLibrary">
-<arg>id=newnote</arg>
-<doc>Click the element identified by ``locator``.</doc>
-<msg timestamp="20220507 09:47:59.568" level="INFO">Clicking element 'id=newnote'.</msg>
-<status status="PASS" starttime="20220507 09:47:59.568" endtime="20220507 09:47:59.641"/>
-</kw>
-<kw name="Element Should Contain" library="SeleniumLibrary">
-<arg>id=error_reply_to</arg>
-<arg>Please choose a patient</arg>
-<doc>Verifies that element ``locator`` contains text ``expected``.</doc>
-<msg timestamp="20220507 09:47:59.668" level="INFO">Element 'id=error_reply_to' contains text 'Please choose a patient'.</msg>
-<status status="PASS" starttime="20220507 09:47:59.641" endtime="20220507 09:47:59.668"/>
-</kw>
-<kw name="Unselect Frame" library="SeleniumLibrary">
-<doc>Sets the main frame as the current frame.</doc>
-<status status="PASS" starttime="20220507 09:47:59.669" endtime="20220507 09:47:59.672"/>
-</kw>
-<status status="PASS" starttime="20220507 09:47:44.818" endtime="20220507 09:47:59.672"/>
+<status status="FAIL" starttime="20220510 12:46:37.955" endtime="20220510 12:46:38.000">WebDriverException: Message: 'driver' executable may have wrong permissions. Please see https://sites.google.com/a/chromium.org/chromedriver/home
+</status>
 </test>
-<status status="PASS" starttime="20220507 09:47:44.575" endtime="20220507 09:47:59.674"/>
+<status status="FAIL" starttime="20220510 12:46:37.689" endtime="20220510 12:46:38.003"/>
 </suite>
 <statistics>
 <total>
-<stat pass="1" fail="0" skip="0">All Tests</stat>
+<stat pass="0" fail="1" skip="0">All Tests</stat>
 </total>
 <tag>
 </tag>
 <suite>
-<stat pass="1" fail="0" skip="0" id="s1" name="Demo9 Task Suite">Demo9 Task Suite</stat>
+<stat pass="0" fail="1" skip="0" id="s1" name="Demo11">Demo11</stat>
 </suite>
 </statistics>
 <errors>
